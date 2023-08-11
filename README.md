@@ -15,4 +15,4 @@
 |4 | Communicating with the Server    	| [Video](https://youtu.be/GRcA05kbIic) | [04_starter](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/04_starter) | [04_demo](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/04_demo) |
 |5 | POST Requests                    	| [Video](https://youtu.be/ZecwoYIFBHU) | [05_starter](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/05_starter) | [05_demo](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/05_demo) |
 |6 | PATCH & DELETE Requests          	| [Video](https://youtu.be/qIwzWpOEJDE) | [06_starter](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/06_starter) | [06_demo](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/06_demo) |
-|7 | Communicating with External APIs 	|       	|        	|         	|
+|7 | Communicating with External APIs 	| [Video](https://youtu.be/aNs8yPCXDBE) | [07_starter](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/07_starter) | [07_demo](https://github.com/rachelAtFlatiron/EAST-SE-073123-Phase-1/tree/07_demo) |

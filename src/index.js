@@ -65,6 +65,13 @@ const inventory = [
   }
 ]
 
+//✅ Review variables (let, const)
+//✅ Review strings
+//✅ Review math
+//✅ Review if/else
+//✅ Review arrays?
+//✅ Review objects?
+
 //✅ 1. Create hello world using REGULAR functions
 function helloWorld(){
   return

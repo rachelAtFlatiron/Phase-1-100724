@@ -73,15 +73,72 @@ const inventory = [
 //✅ Review objects?
 
 //✅ 1. Create hello world using REGULAR functions
-function helloWorld(){
-  return
+// running `helloWorld()` invokes the function thus running the logic
+// running `helloWorld` will just print out the written logic (the function definition) without running the logic
+
+//HOISTING DIFFERENCES
+//function definitions are hoisted to the top (I can invoke them before I see the written logic)
+console.log(formatPriceFunctionDefinition(1234.28394))
+//arrow functions are not hoisted to the top (I cannot invoke them until after I see the definition)
+//console.log(formatPriceArrowFunction(3.2523))
+
+
+// you can put a string directly as an argument helloWorld('Rachel')
+// or put in a variable that evaluates to a string
+// myName = 'Rachel'
+// helloWorld(myName)
+function helloWorld(name){
+  //"Hello World " + name 
+  return `Hello World, ${name}`
 }
 //✅ 2. For Easley's bookstore, create formatPrice(price)
+// 3.3333333 -> '$3.33'
+function formatPriceFunctionDefinition(price) {
+  // round out the price to 2 decimal places
+  // turn the price into a string
+  // add the '$'
+  // return the new string
+  fixedPrice = price.toFixed(2)
+  //return '$' + fixedPrice
+  return `$${fixedPrice}`
+}
 
 //✅ 3. Make an arrow function version of formatPrice
+// const formatPriceArrowFunction = function(price){
+//   fixedPrice = price.toFixed(2)
+//   return `$${fixedPrice}`
+// }
+
+const formatPriceArrowFunction = (price) => {
+  fixedPrice = price.toFixed(2)
+  return `$${fixedPrice}`
+}
 
 //✅ 4. WE DO: create a blurb() function that accepts a book as an argument and logs a message in the following format:
+
+const oneBook = {
+  id: 1,
+  title: 'Eloquent JavaScript: A Modern Introduction to Programming',
+  author: 'Marjin Haverbeke',
+  price: 10.023542350,
+  reviews: [{userID: 1, content:'Good book, but not great for new coders'}],
+  inventory: 10,
+  imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/51IKycqTPUL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg'
+}
+const twoBook = {
+  id: 2,
+  title: 'JavaScript & JQuery: Interactive Front-End Web Development',
+  author: 'Jon Duckett',
+  price: 45.72352355,
+  reviews: [{userID: 15, content:'good way to learn JQuery'}],
+  inventory: 2,
+  imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31SRWF+LkKL._SX398_BO1,204,203,200_.jpg'
+}
 //'Eloquent JavaScript: A Modern Introduction to Programming by Marjin Haverbeke is on sale for $10.00'
+const blurb = (book) => {
+  // return book.title + ' by ' + book.author + ' is on sale for ' + formatPriceArrowFunction(book.price)
+  return `${book.title} by ${book.author} is on sale for ${formatPriceArrowFunction(book.price)}`
+}
 
 //✅ 5. Call formatPrice on an array of prices
 

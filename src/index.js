@@ -78,7 +78,7 @@ const inventory = [
 
 //HOISTING DIFFERENCES
 //function definitions are hoisted to the top (I can invoke them before I see the written logic)
-console.log(formatPriceFunctionDefinition(1234.28394))
+//console.log(formatPriceFunctionDefinition(1234.28394))
 //arrow functions are not hoisted to the top (I cannot invoke them until after I see the definition)
 //console.log(formatPriceArrowFunction(3.2523))
 
@@ -143,15 +143,56 @@ const blurb = (book) => {
 //✅ 5. Call formatPrice on an array of prices
 
 //✅ 5a. Create an array
+const prices = [3, 2.3, 29.832, 3.33333]
 
 //✅ 5b. Use a for loop to iterate over prices
+//[0...4] 
+for(let i = 0; i < 4; i++) {
+  //console.log(`i is ${i}, prices[i] is ${prices[i]}`)
+}
 
 //✅ 5c. Use .forEach to iterate over prices
+//el => element 
+// i => index 
+// let forEachReturn = prices.forEach((el, i) => {
+//   console.log(`i is ${i}, prices[i] is ${el}`)
+// })
+
 
 //✅ 5d. Use .map to iterate over prices
+//original array (prices) does not get mutated
+let mapReturn = prices.map((el, i) => {
+  //original element gets replaced with the return value
+  return formatPriceFunctionDefinition(el)
+})
 
 //✅ 5e. using .map, for each book in inventory, return blurb(book)
 //output: ['Eloquent JavaScript: A Modern Introduction to Programming is on sale for $10.00', ...]
+
+let inventoryBlurbs = inventory.map((el, i) => {
+  //el represents one book in inventory
+  //blurb(el) will spit out one string
+  return blurb(el)
+})
+
+const numbers = [1, 2, 3, 4, 5, 6]
+//[10, 20, 30, 40, 50, 60]
+const timesTen = numbers.map((el, i) => {
+  return el * 10
+})
+
+const colors = ["red", "blue", "yellow", "green"]
+//["!red!", "!blue!", "!yellow!", "!green!"]
+const exclamationColors = colors.map((el) => {
+  return "!" + el + "!"
+})
+
+const numbersTwo = [6, 8, 10, 13]
+//[12, 16, 20, 26]
+const timesTwo = numbersTwo.map((el) => {
+  return el * 2
+})
+
 
 //✅ 6. Create a version of myMap that uses a for loop to mimic .map
 //input: array, callback function

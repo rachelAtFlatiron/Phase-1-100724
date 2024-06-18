@@ -9,6 +9,7 @@
 
 |No. | Lecture                          | Video 	| Starter 	| Solution 	|
 |----|------------------------------	|:-----:	|--------	|---------	|
+|0 | JS Fundamentals                    | [Video]() | [00_starter]() | [00_demo]() |
 |1 | Functions & Scope                	| [Video]() | [01_starter]() | [01_demo]() |
 |2 | DOM Manipulation                 	| [Video]() | [02_starter]() | [02_demo]()  |
 |3 | DOM Events                       	| [Video]() | [03_starter]() | [03_demo]()  |

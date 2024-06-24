@@ -1,4 +1,4 @@
-# Phase-1-062424
+# SE-EAST-Phase-1-062424
 ## Phase Level Objectives
 - [ ] Understand the fundamentals of JavaScript as a language, including functions and scope
 - [ ] Use data types and structures to solve problems in JavaScript

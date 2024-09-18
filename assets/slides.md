@@ -119,6 +119,32 @@ favorite documentation: [atlassian](https://www.atlassian.com/git/tutorials)
 
 ---
 
+## Remote vs Local
+
+- local: the repo on your computer
+- remote (origin): the repo on Github.com
+- push: get changes from local to remote
+- pull: get changes from remote to local
+
+```
+> git add .
+> git commit -m 'Some message here'
+> git push origin main
+```
+
+```
+> git pull origin main
+```
+
+<aside class="notes">
+- git pull will immediately merge with current branch <br />
+- origin refers to the remote repo, main refers to the branch you want to interact with (git remote, git remote -v) <br />
+
+- DEMO THIS 
+</aside>
+
+---
+
 ## Saving Changes 
 
 #### Whenever you make changes to the files and you are satisfied with those changes, save a version of your code as a commit.
@@ -201,28 +227,3 @@ favorite documentation: [atlassian](https://www.atlassian.com/git/tutorials)
 </aside>
 
 
----
-
-## Remote vs Local
-
-- local: the repo on your computer
-- remote (origin): the repo on Github.com
-- push: get changes from local to remote
-- pull: get changes from remote to local
-
-```
-> git add .
-> git commit -m 'Some message here'
-> git push origin main
-```
-
-```
-> git pull origin main
-```
-
-<aside class="notes">
-- git pull will immediately merge with current branch <br />
-- origin refers to the remote repo, main refers to the branch you want to interact with (git remote, git remote -v) <br />
-
-- DEMO THIS 
-</aside>
